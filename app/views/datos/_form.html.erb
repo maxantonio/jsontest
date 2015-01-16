@@ -1,0 +1,29 @@
+<%= form_for(@dato) do |f| %>
+  <% if @dato.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dato.errors.count, "error") %> prohibited this dato from being saved:</h2>
+
+      <ul>
+      <% @dato.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :emisora %><br>
+    <%= f.text_field :emisora %>
+  </div>
+  <div class="field">
+    <%= f.label :serie %><br>
+    <%= f.number_field :serie %>
+  </div>
+  <div class="field">
+    <%= f.label :datos %><br>
+    <%= f.text_field :datos %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

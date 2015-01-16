@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  emisora: MyString
+  serie: 1
+  datos: 
+
+two:
+  emisora: MyString
+  serie: 1
+  datos: 

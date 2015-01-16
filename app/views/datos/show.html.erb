@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Emisora:</strong>
+  <%= @dato.emisora %>
+</p>
+
+<p>
+  <strong>Serie:</strong>
+  <%= @dato.serie %>
+</p>
+
+<p>
+  <strong>Datos:</strong>
+  <%= @dato.datos %>
+</p>
+
+<%= link_to 'Edit', edit_dato_path(@dato) %> |
+<%= link_to 'Back', datos_path %>
